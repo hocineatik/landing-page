@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الساعة الذكية الجديدة: رفيقك الصحي والأنيق | اطلب الآن في الجزائر</title>
+    <meta name="description" content="احصل على ساعتك الذكية المتوافقة مع أندرويد و iOS بشاشة 1.73 بوصة، مراقبة ضغط الدم والأكسجين، ومكالمات بلوتوث. توصيل لـ 58 ولاية ودفع عند الاستلام في الجزائر.">
+    <meta name="keywords" content="ساعة ذكية، ساعة أندرويد، ساعة iOS، ساعة صحية، مراقبة ضغط الدم، مراقبة الأكسجين، مكالمات بلوتوث، الجزائر، تسوق أونلاين، دفع عند الاستلام، توصيل 58 ولاية">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* الخطوط */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+        :root {
+            --primary-color: #007bff; /* أزرق أساسي */
+            --secondary-color: #28a745; /* أخضر للأزرار الناجحة */
+            --accent-color: #ffc107; /* أصفر للإبرازات */
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #dee2e6;
+            --dark-gray: #495057;
+            --gradient-start: #0056b3; /* أزرق أغمق للجرادينت */
+            --gradient-end: #007bff; /* أزرق أساسي للجرادينت */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            direction: rtl; /* لضمان دعم اللغة العربية بشكل صحيح */
+            text-align: right;
+            overflow-x: hidden; /* لمنع ظهور شريط التمرير الأفقي بسبب التحركات */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* شريط التنقل (Navbar) - اختياري */
+        .navbar {
+            background-color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-size: 1.8em;
+            font-weight: 900;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .navbar .nav-links a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 900;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('path/to/your/hero-background.jpg') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            animation: fadeIn 1s ease-out; /* بداية ظهور للصفحة */
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.6em;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 18px 35px;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #218838; /* لون أخضر أغمق عند التمرير */
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .features {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .features h3, .how-it-works h3, .testimonials h3, .faq h3, .contact h3 {
+            text-align: center;
+            font-size: 2.8em;
+            color: var(--primary-color);
+            margin-bottom: 50px;
+            position: relative;
+            font-weight: 900;
+        }
+
+        .features h3::after, .how-it-works h3::after, .testimonials h3::after, .faq h3::after, .contact h3::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 100px;
+            height: 5px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-item {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .feature-item i {
+            font-size: 3.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .feature-item:hover i {
+            color: var(--secondary-color);
+        }
+
+        .feature-item h4 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #444;
+            font-weight: 700;
+        }
+
+        .product-showcase {
+            padding: 80px 0;
+            text-align: center;
+            background-color: var(--light-bg);
+        }
+
+        .product-showcase .main-image {
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            margin-bottom: 40px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border: 4px solid transparent; /* لجعل الحدود تظهر عند التحديد */
+        }
+
+        .gallery img.active,
+        .gallery img:hover {
+            transform: scale(1.07);
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-showcase {
+            padding: 80px 0;
+            text-align: center;
+            background-color: var(--white);
+        }
+
+        .video-showcase video {
+            max-width: 900px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .cta-section {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        }
+
+        .cta-section h3 {
+            color: var(--white);
+            font-size: 3em;
+            margin-bottom: 25px;
+            font-weight: 900;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .cta-section p {
+            font-size: 1.5em;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .how-it-works {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .step-item {
+            padding: 30px;
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .step-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .step-item .step-number {
+            background-color: var(--primary-color);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border: 3px solid var(--accent-color);
+        }
+
+        .step-item h4 {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .testimonial-carousel {
+            display: flex;
+            overflow-x: auto; /* لتمكين التمرير الأفقي إذا كان هناك العديد من الشهادات */
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 30px; /* مسافة لزر التمرير */
+            margin-top: 20px;
+        }
+
+        .testimonial-item {
+            flex: 0 0 480px; /* عرض كل شهادة */
+            max-width: 480px;
+            scroll-snap-align: start;
+            background-color: var(--light-bg);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-left: 25px; /* مسافة بين العناصر */
+            text-align: right; /* محاذاة النص داخل الشهادة */
+            border: 1px solid var(--border-color);
+        }
+
+        .testimonial-item:last-child {
+            margin-left: 0; /* لا يوجد هامش لآخر عنصر */
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: var(--dark-gray);
+        }
+
+        .testimonial-item .customer-info {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1em;
+        }
+
+        .testimonial-item .stars {
+            color: var(--accent-color);
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .faq {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            padding: 20px 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--white);
+            color: var(--primary-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #f0f0f0;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* إضافة padding للانتقال */
+            background-color: var(--light-bg);
+            color: #555;
+        }
+
+        .faq-answer p {
+            padding-bottom: 20px;
+            padding-top: 10px; /* إضافة بادينغ علوي للنص */
+        }
+
+        .contact {
+            padding: 80px 0;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: var(--light-bg);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact form input[type="text"],
+        .contact form input[type="tel"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-align: right;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact form input[type="text"]:focus,
+        .contact form input[type="tel"]:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+            outline: none;
+        }
+
+        .contact form button {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.4em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .contact-info {
+            margin-top: 40px;
+        }
+
+        .contact-info a {
+            display: inline-block;
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #333;
+            color: var(--white);
+            text-align: center;
+            padding: 40px 0;
+            font-size: 1em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* وسائل الدفع والتوصيل */
+        .payment-delivery {
+            background: linear-gradient(to left, var(--gradient-start), var(--gradient-end));
+            color: var(--white);
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .payment-delivery .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .payment-delivery-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .payment-delivery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .payment-delivery-item i {
+            font-size: 2.2em;
+            margin-left: 15px;
+            color: var(--accent-color);
+        }
+
+        /* زر العودة للأعلى */
+        #scrollToTopBtn {
+            display: none; /* مخفي افتراضياً */
+            position: fixed;
+            bottom: 30px;
+            left: 30px; /* في الجانب الأيسر للصفحات ذات الاتجاه RTL */
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 1.8em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+
+
+        /* For smaller screens */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none; /* إخفاء الروابط في النطاق الضيق، يمكن استبدالها بزر همبرغر */
+            }
+            .navbar .container {
+                justify-content: center;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+            .hero h2 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.3em;
+            }
+            .cta-button {
+                font-size: 1.3em;
+                padding: 15px 30px;
+            }
+            .features h3, .how-it-works h3, .testimonials h3, .faq h3, .contact h3 {
+                font-size: 2.2em;
+            }
+            .feature-item h4 {
+                font-size: 1.5em;
+            }
+            .gallery img {
+                height: 120px;
+            }
+            .testimonial-item {
+                flex: 0 0 95%; /* تجعل كل شهادة تأخذ عرض 95% على الشاشات الصغيرة */
+                max-width: 95%;
+                margin-left: 15px;
+            }
+            .faq-question {
+                font-size: 1.1em;
+                padding: 15px 20px;
+            }
+            .contact form input, .contact form button {
+                font-size: 1.1em;
+                padding: 12px;
+            }
+            .contact-info a {
+                font-size: 1.2em;
+                margin: 0 10px;
+            }
+            .payment-delivery-item {
+                font-size: 1.1em;
+                padding: 8px 15px;
+            }
+            .payment-delivery-item i {
+                font-size: 1.8em;
+            }
+             #scrollToTopBtn {
+                bottom: 20px;
+                left: 20px;
+                padding: 12px;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">ساعتي الذكية</a>
+            <div class="nav-links">
+                <a href="#features-section">الميزات</a>
+                <a href="#product-showcase-section">الصور والفيديو</a>
+                <a href="#testimonials-section">آراء العملاء</a>
+                <a href="#order-section">اطلب الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container" data-aos="fade-down">
+            <h1>الساعة الذكية الجديدة: ثورة الأناقة والصحة</h1>
+            <p>رفيقك الأمثل للحياة العصرية، متوفر الآن في الجزائر.</p>
+        </div>
+    </header>
+
+    <section class="hero" id="hero-section">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>تجربة ذكية لا مثيل لها على معصمك!</h2>
+            <p>ابقَ متصلاً، راقب صحتك بدقة، واستمتع بتصميم فاخر يلائم أسلوب حياتك العصري والنشط.</p>
+            <a href="#order-section" class="cta-button">اطلب ساعتك الآن واحصل على توصيل مجاني!</a>
+        </div>
+    </section>
+
+    <section class="payment-delivery" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
+            <div class="payment-delivery-item">
+                <i class="fas fa-handshake"></i>
+                <span>الدفع عند الاستلام</span>
+            </div>
+            <div class="payment-delivery-item">
+                <i class="fas fa-truck-fast"></i>
+                <span>توصيل سريع لـ 58 ولاية</span>
+            </div>
+            <div class="payment-delivery-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>ضمان الجودة وخدمة ما بعد البيع</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features-section">
+        <div class="container">
+            <h3 data-aos="fade-right">لماذا تختار ساعتنا الذكية؟</h3>
+            <div class="feature-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>توافق كامل (أندرويد و iOS)</h4>
+                    <p>اتصال سلس وسهل مع هاتفك الذكي، بغض النظر عن نظامه التشغيلي.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4>مراقبة صحية دقيقة</h4>
+                    <p>تتبع دقيق لضغط الدم ومستوى الأكسجين في الدم على مدار الساعة لدعم صحتك.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>مكالمات بلوتوث عالية الجودة</h4>
+                    <p>أجرِ واستقبل المكالمات مباشرةً من معصمك بوضوح فائق، دون الحاجة لهاتفك.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-display"></i>
+                    <h4>شاشة لمس كبيرة 1.73 بوصة</h4>
+                    <p>شاشة عالية الدقة، واضحة وسهلة القراءة، لعرض جميع الإشعارات والبيانات بوضوح.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-battery-full"></i>
+                    <h4>بطارية تدوم طويلاً</h4>
+                    <p>استمتع بالاستخدام المتواصل لعدة أيام بفضل البطارية القوية، وداعاً للشحن المتكرر.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-bell"></i>
+                    <h4>إشعارات ذكية متكاملة</h4>
+                    <p>ابقَ على اطلاع دائم بجميع رسائلك وإشعارات تطبيقاتك المفضلة مباشرة على معصمك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-showcase" id="product-showcase-section">
+        <div class="container">
+            <h3 data-aos="fade-left">تصميم يواكب أناقتك ويبرز شخصيتك</h3>
+            <img id="mainProductImage" src="Capture d’écran 2025-07-27 211221.jpg-3d09b4cc-7def-4d7d-9a12-bd8109ca9a98" alt="الساعة الذكية الرئيسية" class="main-image" data-aos="zoom-in" data-aos-duration="800">
+            <div class="gallery" data-aos="fade-up" data-aos-delay="200">
+                <img src="Capture d’écran 2025-07-27 211221.jpg-3d09b4cc-7def-4d7d-9a12-bd8109ca9a98" alt="الساعة الذكية 1" class="active">
+                <img src="path/to/your/watch-image2.jpg" alt="الساعة الذكية 2">
+                <img src="path/to/your/watch-image3.jpg" alt="الساعة الذكية 3">
+                <img src="path/to/your/watch-image4.jpg" alt="الساعة الذكية 4">
+                <img src="path/to/your/watch-image5.jpg" alt="الساعة الذكية 5">
+                <img src="path/to/your/watch-image6.jpg" alt="الساعة الذكية 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="video-showcase">
+        <div class="container">
+            <h3 data-aos="fade-right">شاهد الساعة في العمل!</h3>
+            <video controls poster="path/to/your/video-thumbnail.jpg" data-aos="zoom-in" data-aos-duration="800">
+                <source src="path/to/your/watch-video.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h3 data-aos="fade-up">كيف تحصل على ساعتك؟ الأمر بسيط!</h3>
+            <div class="steps-grid">
+                <div class="step-item" data-aos="fade-left" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h4>املأ النموذج</h4>
+                    <p>املأ نموذج الطلب السريع بمعلوماتك وعنوان التوصيل بدقة.</p>
+                </div>
+                <div class="step-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h4>تأكيد الطلب</h4>
+                    <p>سنتصل بك في أقرب وقت لتأكيد طلبك وتفاصيل الشحن والتوصيل.</p>
+                </div>
+                <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h4>استلم ساعتك</h4>
+                    <p>تصلك الساعة إلى باب منزلك في غضون أيام قليلة إلى أي ولاية في الجزائر.</p>
+                </div>
+                <div class="step-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <h4>ادفع عند الاستلام</h4>
+                    <p>ادفع ثمن ساعتك بأمان وراحة عند استلامها والتأكد منها بنفسك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container" data-aos="zoom-in" data-aos-duration="700">
+            <h3>لا تفوت الفرصة! الكمية محدودة جداً!</h3>
+            <p>اغتنم العرض الآن وامتلك ساعتك الذكية التي ستغير طريقة تفاعلك مع العالم.</p>
+            <a href="#order-section" class="cta-button">اطلب ساعتك اليوم واستفد من التوصيل المجاني!</a>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials-section">
+        <div class="container">
+            <h3 data-aos="fade-right">ماذا يقول عملاؤنا السعداء عن ساعتنا؟</h3>
+            <div class="testimonial-carousel" data-aos="fade-up">
+                <div class="testimonial-item">
+                    <p>"ساعة رائعة بكل المقاييس! ميزات تتبع الصحة دقيقة جداً ومكالمات البلوتوث واضحة للغاية. أنصح بها بشدة لكل من يبحث عن ساعة ذكية عملية وأنيقة."</p>
+                    <div class="customer-info">أحمد ب.، الجزائر العاصمة</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"أنا معجبة جداً بالتصميم الأنيق الذي يناسب ملابسي اليومية، والتوافق المثالي مع الآيفون الخاص بي. أصبحت لا أستغني عنها في يومي، فهي تسهل علي الكثير. شكراً لكم!"</p>
+                    <div class="customer-info">فاطمة الزهراء ع.، وهران</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"خدمة عملاء ممتازة وتوصيل سريع ومجاني! الساعة نفسها تعمل بشكل رائع، خاصة ميزة مراقبة الأكسجين، فهي مفيدة جداً لي في تتبع حالتي الصحية."</p>
+                    <div class="customer-info">يوسف م.، قسنطينة</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"لم أكن أتوقع هذه الجودة بهذا السعر! الشاشة رائعة والبطارية تدوم طويلاً. أصبحت أتابع نشاطي البدني وصحتي بسهولة أكبر."</p>
+                    <div class="customer-info">زينب ك.، عنابة</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h3 data-aos="fade-left">أسئلة شائعة</h3>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">
+                    هل الساعة متوافقة مع جميع الهواتف الذكية؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، ساعتنا الذكية متوافقة تمامًا مع أجهزة أندرويد و iOS (أجهزة آيفون)، ويمكن ربطها بسهولة عبر تطبيق مخصص متاح على المتاجر الرسمية.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">
+                    ما هي مدة الضمان على الساعة؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>تأتي الساعة بضمان لمدة 6 أشهر ضد عيوب التصنيع، لضمان راحتك وثقتك بمنتجنا.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-question">
+                    كيف يتم الدفع؟ وهل يوجد توصيل لجميع الولايات؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>الدفع يكون عند الاستلام (يداً بيد) بعد فحص المنتج والتأكد منه. نعم، نقدم خدمة التوصيل لجميع الولايات الـ 58 في الجزائر.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="faq-question">
+                    كم تستغرق عملية التوصيل؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>تستغرق عملية التوصيل عادةً من 2 إلى 5 أيام عمل، حسب الولاية المستهدفة وموقعك الجغرافي.</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="order-section" class="contact">
+        <div class="container">
+            <h3 data-aos="fade-right">اطلب ساعتك الآن وادخل عالم الذكاء!</h3>
+            <p data-aos="fade-up">املأ النموذج أدناه وسنتواصل معك لتأكيد طلبك وتفاصيل الشحن. لا تدع الفرصة تفوتك!</p>
+            <form action="#" method="POST" data-aos="zoom-in" data-aos-delay="200">
+                <div style="margin-bottom: 20px;">
+                    <input type="text" name="name" placeholder="الاسم الكامل *" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <input type="tel" name="phone" placeholder="رقم الهاتف (مثال: 07xxxxxx) *" pattern="[0-9]{10}" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <input type="text" name="address" placeholder="عنوانك الكامل (الولاية، البلدية، الحي، الشارع) *" required>
+                </div>
+                <button type="submit" class="cta-button" style="background-color: var(--primary-color); color: var(--white);">تأكيد الطلب الآن</button>
+            </form>
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+                <p>أو اتصل بنا مباشرة لمزيد من الاستفسارات:</p>
+                <a href="tel:+2137XXXXXXXX"><i class="fas fa-phone"></i> 07XXXXXXXX</a>
+                <a href="https://wa.me/2137XXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 الساعة الذكية. جميع الحقوق محفوظة.</p>
+            <p>صُممت بحب في الجزائر.</p>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 1000, // مدة التحريك بالمللي ثانية
+            once: true,    // تحريك مرة واحدة فقط عند التمرير لأسفل
+        });
+
+        // لتبديل صور المعرض
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImage = document.getElementById('mainProductImage');
+            const galleryImages = document.querySelectorAll('.gallery img');
+
+            galleryImages.forEach(img => {
+                img.addEventListener('click', function() {
+                    galleryImages.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                    mainImage.src = this.src;
+
+                    // إضافة تأثير تكبير خفيف للصورة الرئيسية عند التغيير
+                    mainImage.style.transform = 'scale(1.02)';
+                    setTimeout(() => {
+                        mainImage.style.transform = 'scale(1)';
+                    }, 300); // إزالة التأثير بعد 300 مللي ثانية
+                });
+            });
+
+            // لوظيفة الأسئلة الشائعة (FAQ Accordion)
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+
+                    // إغلاق أي سؤال آخر مفتوح
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question && otherQuestion.classList.contains('active')) {
+                            otherQuestion.classList.remove('active');
+                            otherQuestion.nextElementSibling.style.maxHeight = null;
+                            otherQuestion.querySelector('i').classList.remove('fa-chevron-up');
+                            otherQuestion.querySelector('i').classList.add('fa-chevron-down');
+                        }
+                    });
+
+                    question.classList.toggle('active');
+
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down');
+                        icon.classList.toggle('fa-chevron-up');
+                    }
+                });
+            });
+
+            // زر العودة للأعلى
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            window.onscroll = function() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            };
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Smooth scrolling for Navbar links (Optional, if you uncomment the navbar)
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
